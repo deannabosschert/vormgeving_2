@@ -286,22 +286,8 @@ header {
   flex-wrap: wrap;
 }
 
-header div {
-  width: 65%;
-  background-image: url("/img/Foto_01.jpeg");
-}
-
 nav {
   min-width: 100%;
-}
-
-nav ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 0.5rem;
-  border: 1px solid red;
 }
 
 nav ul li a {
@@ -310,15 +296,6 @@ nav ul li a {
 
 article {
   background-color: white;
-}
-
-h1 {
-  background-color: red;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 25%;
 }
 
 /* LAYOUT */

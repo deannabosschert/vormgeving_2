@@ -51,10 +51,6 @@ html {
 body {
   line-height: $baseline;
   padding: $baseline 0;
-  margin: 0 auto;
-  background-image: linear-gradient(rgba(200, 50, 50, .25) 1px, transparent 1px);
-  background-size: 1px $baseline;
-  width: 22rem;
 }
 
 p {
@@ -67,50 +63,55 @@ h2,
 h3,
 h4,
 h5 {
-  // margin-bottom: $baseline;
+  margin-bottom: $baseline;
 }
 
 h1,
 h2 {
-  font-weight: 600;
-  text-align: center;
+  // font-weight: 600;
+  // text-align: center;
+}
+
+
+// label: height/width van de parent
+// Avenir Light, Avenir Book, Avenir Roman, Avenir Medium, Avenir Heavy, Avenir Black
+
+html {
+  font-family: Avenir;
+}
+
+h1, h2, h3, h4, .logo {
+  font-family: Avenir Black;
 }
 
 h1 {
   font-size: $h1;
   line-height: $h1;
-  margin-bottom: calc((#{$baseline} - #{$h1}) + #{$baseline});
-  font-variant: small-caps;
 }
 
 h2 {
   font-size: $h2;
   line-height: $h2;
-  margin-bottom: calc((#{$baseline} - #{$h2}) + #{$baseline});
 }
 
 h3 {
   font-size: $h3;
   line-height: $h3;
-  margin-bottom: calc((#{$baseline} - #{$h3}) + #{$baseline}/3);
 }
 
 h4 {
   font-size: $h4;
   line-height: $h4;
-  margin-bottom: calc((#{$baseline} - #{$h4}) + #{$baseline});
 }
 
 h5 {
   font-size: $h5;
   line-height: $h5;
-  margin-bottom: calc((#{$baseline} - #{$h5}) + #{$baseline});
 }
 
 h6 {
   font-size: $h6;
   line-height: $h6;
-  margin-bottom: calc((#{$baseline} - #{$h6}) + #{$baseline});
 }
 
 
@@ -121,4 +122,18 @@ p {
 a {
   text-decoration: none;
   font-size: $p;
+}
+
+.logo {
+  background-color: $red;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.5px;
+  min-height: 20px;
+  width: 8rem;
+  padding: 0 0.25rem;
+}
+
+.logo span {
+  color: black;
 }

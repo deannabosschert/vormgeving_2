@@ -1,30 +1,33 @@
 {
-  "name": "personal-styleguide",
+  "name": "vormgeving_2",
   "version": "1.0.0",
-  "description": "Generic place for my default styleguide",
+  "description": "Assignment of my 2nd year reset for 'Design course 2'",
   "scripts": {
     "predev": "rimraf _site",
-    "dev:eleventy": "npx @11ty/eleventy --formats=html,gif,jpg,png,css --serve --port=3000",
-    "dev:css": "sass --watch assets/scss:_site/assets/",
+    "dev:css": "sass --watch src/assets/scss:_site/assets/",
+    "dev:eleventy": "npx @11ty/eleventy --formats=html,gif,jpg,jpeg,png,css --serve --port=3000",
     "dev": "cross-env ELEVENTY_ENV=development run-p dev:*",
     "debug": "DEBUG=* eleventy"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/deannabosschert/personal-styleguide.git"
+    "url": "git+https://github.com/deannabosschert/vormgeving_2.git"
   },
   "keywords": [],
   "author": "Deanna Bosschert",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/deannabosschert/personal-styleguide/issues"
+    "url": "https://github.com/deannabosschert/vormgeving_2/issues"
   },
-  "homepage": "https://github.com/deannabosschert/personal-styleguide#readme",
+  "homepage": "https://github.com/deannabosschert/vormgeving_2#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "cross-env": "^7.0.2",
     "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.2",
     "file-size": "^1.0.0"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.6"
   }
 }

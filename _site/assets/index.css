@@ -288,7 +288,8 @@ header {
 
 header div {
   width: 65%;
-  background-image: url("/img/Foto_01.jpeg");
+  background-image: url("/assets/img/Foto_01.jpeg");
+  object-fit: contain;
 }
 
 nav {
@@ -324,6 +325,22 @@ h1 {
 /* LAYOUT */
 /* SIZING */
 /* STATE */
+button:active {
+  background-color: green;
+}
+
+button:hover {
+  background-color: blue;
+}
+
+button:focus {
+  background-color: yellow;
+}
+
+button:disabled {
+  background-color: grey;
+}
+
 /* THEME */
 
 /*# sourceMappingURL=index.css.map */

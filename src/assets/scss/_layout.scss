@@ -15,16 +15,13 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  // margin-bottom: 2rem;
-  // background-color: $dark-green;
+  margin-bottom: 1.5rem;
+  background-color: $dark-green;
+  background-image: linear-gradient(135deg, #92FFC0 10%, #04111f 100%);
   background-image: url("/assets/img/Foto_07.jpg"); // image source: Bron: © Getty Images/iStockphoto
+  background-position: 8px left;
   background-size: cover;
   transform: scaleX(-1);
-
-}
-
-header * {
-  // transform: scaleX(-1);
 }
 
 header section {
@@ -39,7 +36,6 @@ header section {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   transform: scaleX(-1);
-
 }
 
 header section * {
@@ -52,7 +48,6 @@ header section h1 {
   padding: 1rem 0;
   width: 100%;
   // transform: scaleX(-1);
-
   // margin-bottom: 0.25rem;
 }
 
@@ -99,7 +94,6 @@ header nav {
   margin-bottom: 1rem;
   transform: scaleX(-1);
   background-color: rgba(255, 255, 255, 0.675);
-
 }
 
 header nav ul {
@@ -119,7 +113,7 @@ header nav ul li {
   // border: 1px solid #aaa;
   border-radius: 2px;
   border-bottom: 2px solid #fd000d;
-  // padding: 0.2rem 1rem;
+  padding: 0.1rem 0.3rem;
 }
 
 header nav ul li a {
@@ -179,8 +173,6 @@ article h3 {
   // width: 100%;
   font-variant: small-caps;
   letter-spacing: 1.3px;
-
-
 }
 
 article:nth-child(odd) h3 {
@@ -203,25 +195,26 @@ article p {
 
 main section figure {
   position: relative;
-  display:flex;
-  flex-direction:column-reverse;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 main section figure img {
   display: block;
   object-fit: contain;
-
   // width: 100%;
   // height: auto;
   // display: flex;
 }
 // SMOL PARTS
+
 main section figure figcaption {
   position: absolute;
   left: 27.5%;
   color: lightgrey;
   font-size: $h6;
 }
+
 .arrow-right {
   position: absolute;
   top: 50%;
@@ -271,17 +264,18 @@ p {}
 /* SIZING */
 /* STATE */
 button {
-  border-color: #18af75;
-  background-color: #18af75;
-  color: #fff;
-  border-radius: 2px;
+  border-color: $red;
+  background-color: white;
+  background-image: linear-gradient(to right, white 0%, rgba(255, 0, 0, 0.5) 75%, white 100%);
+  color: black;
+  border-radius: $border-radius;
   letter-spacing: 0.25px;
-  font-weight: 900;
+  font-family: Avenir Black;
   text-transform: uppercase;
   text-align: center;
-  // line-height: 44px;
-  // padding: 0 20px;
   vertical-align: middle;
+  transition: 0.5s;
+  background-size: 200% auto;
 }
 
 li:hover {
@@ -291,7 +285,14 @@ li:hover {
 }
 
 button:hover {
-  background-color: green;
+  // background-color: #efefef;
+  // color: $dark-green;
+  // border: inset 4px solid $green;
+  // box-shadow: inset 3px 3px 4px $green, inset -3px -3px 4px $green;
+  background-position: right center;
+  color: $white;
+  text-decoration: none;
+
 }
 
 button:active {
@@ -299,7 +300,10 @@ button:active {
 }
 
 button:focus {
-  background-color: $red;
+  // background-color: $white;
+  // color: black;
+  box-shadow: inset 3px 3px 4px white, inset -3px -3px 4px white;
+
 }
 
 button:disabled {

@@ -264,13 +264,13 @@ p {}
 /* SIZING */
 /* STATE */
 button {
-  border-color: $red;
-  background-color: white;
-  background-image: linear-gradient(to right, white 0%, rgba(255, 0, 0, 0.5) 75%, white 100%);
-  color: black;
+  border-color: $green;
+  background-color: $red;
+  background-image: linear-gradient(to right, $red 0%, rgba(255, 255, 255, 0.5) 65%, $red 100%);
+  color: $white;
   border-radius: $border-radius;
   letter-spacing: 0.25px;
-  font-family: Avenir Black;
+  font-weight: 900;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
@@ -300,9 +300,9 @@ button:active {
 }
 
 button:focus {
-  // background-color: $white;
+  background-color: $white;
   // color: black;
-  box-shadow: inset 3px 3px 4px white, inset -3px -3px 4px white;
+  box-shadow: inset 3px 3px 4px $red, inset -3px -3px 4px $red;
 
 }
 

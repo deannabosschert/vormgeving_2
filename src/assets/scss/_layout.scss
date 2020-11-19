@@ -265,8 +265,8 @@ p {}
 /* STATE */
 button {
   border-color: $green;
-  background-color: $red;
-  background-image: linear-gradient(to right, $red 0%, rgba(255, 255, 255, 0.5) 65%, $red 100%);
+  background-color: $green;
+  background-image: linear-gradient(to right, $green 0%, rgba(255, 255, 255, 0.675) 65%, $green 115%);
   color: $white;
   border-radius: $border-radius;
   letter-spacing: 0.25px;
@@ -280,7 +280,6 @@ button {
 
 li:hover {
   background-color: #F8F8F8;
-  box-shadow: 1.5px 1.5px 2px #f1f1f1, -1.5px -1.5px 2px #ffffff;
   border-bottom: 2px solid #fd000d;
 }
 
@@ -301,8 +300,8 @@ button:active {
 
 button:focus {
   background-color: $white;
-  // color: black;
-  box-shadow: inset 3px 3px 4px $red, inset -3px -3px 4px $red;
+  color: black;
+  box-shadow: inset 3px 3px 4px $green, inset -3px -3px 4px $green;
 
 }
 

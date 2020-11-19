@@ -50,12 +50,12 @@ html {
 
 body {
   line-height: $baseline;
-  padding: $baseline 0;
+  // padding: $baseline 0;
 }
 
 p {
   line-height: $baseline;
-  margin-bottom: $baseline;
+  // margin-bottom: $baseline;
 }
 
 h1,
@@ -63,7 +63,7 @@ h2,
 h3,
 h4,
 h5 {
-  margin-bottom: $baseline;
+  // margin-bottom: $baseline;
 }
 
 h1,
@@ -128,10 +128,10 @@ a {
   background-color: $red;
   color: white;
   text-align: center;
-  letter-spacing: 0.5px;
-  min-height: 20px;
-  width: 8rem;
-  padding: 0 0.25rem;
+  // letter-spacing: 0.5px;
+  // min-height: 20px;
+  // width: 8rem;
+  // padding: 0 0.25rem;
 }
 
 .logo span {

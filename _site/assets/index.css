@@ -352,7 +352,7 @@ nav ul li a {
 }
 
 main {
-  width: 85vw;
+  width: 95vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -371,6 +371,8 @@ article {
   border-radius: 5px;
   display: flex;
   margin: 1rem;
+  min-width: 15rem;
+  max-width: 40vw;
 }
 
 article h3 {
@@ -392,9 +394,7 @@ article:nth-child(even) {
 
 article p {
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
-  padding: 1rem;
-  margin: 0.5rem 0;
-  min-width: 10rem;
+  padding: 1rem 2rem 1rem 1.5rem;
   max-width: 15rem;
 }
 

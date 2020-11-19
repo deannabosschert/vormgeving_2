@@ -279,18 +279,20 @@ header {
 
 header section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-image: url("/assets/img/Foto_07.jpg");
   background-size: cover;
+  justify-content: center;
   height: 11rem;
+  padding-left: 10%;
+  margin-bottom: 0.5rem;
 }
 
-header section div h1 {
+header section h1 {
   color: white;
-  text-align: center;
-  padding: 1rem;
+  text-align: left;
+  padding: 1rem 0;
   width: 100%;
-  margin-top: 1rem;
 }
 
 .logo {
@@ -314,14 +316,15 @@ header section p {
   font-family: Avenir;
   font-weight: 500;
   text-align: left;
-  align-self: baseline;
-  width: 25%;
-  background-color: #04111f;
+  width: 65%;
   overflow: hidden;
   color: white;
+  margin-bottom: 0.5rem;
 }
 
-header section div button {
+header section button {
+  width: 7rem;
+  padding: 0 2rem;
   margin: 0 0 1rem;
 }
 
@@ -485,7 +488,7 @@ button:active {
 }
 
 button:focus {
-  background-color: yellow;
+  background-color: red;
 }
 
 button:disabled {

@@ -250,6 +250,10 @@ a {
   font-size: 0.6rem;
 }
 
+button {
+  font-size: 0.6rem;
+}
+
 .logo {
   background-color: red;
   color: white;
@@ -275,7 +279,11 @@ body {
 header {
   display: flex;
   flex-direction: column;
+  margin-bottom: 1.5rem;
+  background-color: #04111f;
+  background-image: linear-gradient(135deg, #92FFC0 10%, #04111f 100%);
   background-image: url("/assets/img/Foto_07.jpg");
+  background-position: 8px left;
   background-size: cover;
   transform: scaleX(-1);
 }
@@ -343,6 +351,7 @@ header nav ul li {
   width: 5rem;
   border-radius: 2px;
   border-bottom: 2px solid #fd000d;
+  padding: 0.1rem 0.3rem;
 }
 
 header nav ul li a {
@@ -456,15 +465,18 @@ h2 {
 /* SIZING */
 /* STATE */
 button {
-  border-color: #18af75;
-  background-color: #18af75;
-  color: #fff;
-  border-radius: 2px;
+  border-color: red;
+  background-color: white;
+  background-image: linear-gradient(to right, white 0%, rgba(255, 0, 0, 0.5) 75%, white 100%);
+  color: black;
+  border-radius: 5px;
   letter-spacing: 0.25px;
-  font-weight: 900;
+  font-family: Avenir Black;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
+  transition: 0.5s;
+  background-size: 200% auto;
 }
 
 li:hover {
@@ -474,7 +486,9 @@ li:hover {
 }
 
 button:hover {
-  background-color: green;
+  background-position: right center;
+  color: white;
+  text-decoration: none;
 }
 
 button:active {
@@ -482,7 +496,7 @@ button:active {
 }
 
 button:focus {
-  background-color: red;
+  box-shadow: inset 3px 3px 4px white, inset -3px -3px 4px white;
 }
 
 button:disabled {

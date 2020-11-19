@@ -275,22 +275,27 @@ body {
 header {
   display: flex;
   flex-direction: column;
+  background-image: url("/assets/img/Foto_07.jpg");
+  background-size: cover;
+  transform: scaleX(-1);
 }
 
 header section {
   display: flex;
-  flex-direction: row;
-  background-image: url("/assets/img/Foto_07.jpg");
-  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
   height: 11rem;
+  padding-left: 10%;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  transform: scaleX(-1);
 }
 
-header section div h1 {
+header section h1 {
   color: white;
-  text-align: center;
-  padding: 1rem;
+  text-align: left;
+  padding: 1rem 0;
   width: 100%;
-  margin-top: 1rem;
 }
 
 .logo {
@@ -302,35 +307,30 @@ header section div h1 {
   bottom: 0;
 }
 
-header section div {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 75%;
-}
-
 header section p {
   font-family: Avenir;
   font-weight: 500;
   text-align: left;
-  align-self: baseline;
-  width: 25%;
-  background-color: #04111f;
+  width: 65%;
   overflow: hidden;
   color: white;
-}
-
-header section div button {
-  margin: 0 0 1rem;
-}
-
-nav {
-  min-width: 100%;
   margin-bottom: 0.5rem;
 }
 
-nav ul {
+header section button {
+  width: 7rem;
+  padding: 1rem 0.8rem;
+  margin: 0 0 0.5rem;
+}
+
+header nav {
+  min-width: 100%;
+  margin-bottom: 1rem;
+  transform: scaleX(-1);
+  background-color: rgba(255, 255, 255, 0.675);
+}
+
+header nav ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -338,15 +338,14 @@ nav ul {
   padding: 0.5rem;
 }
 
-nav ul li {
+header nav ul li {
   text-align: center;
   width: 5rem;
   border-radius: 2px;
-  color: #000;
   border-bottom: 2px solid #fd000d;
 }
 
-nav ul li a {
+header nav ul li a {
   text-decoration: none;
   font-weight: 600;
   text-transform: uppercase;
@@ -364,7 +363,7 @@ main {
   align-self: center;
 }
 
-section {
+main section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -465,8 +464,6 @@ button {
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
-  line-height: 44px;
-  padding: 0 20px;
   vertical-align: middle;
 }
 
@@ -485,7 +482,7 @@ button:active {
 }
 
 button:focus {
-  background-color: yellow;
+  background-color: red;
 }
 
 button:disabled {

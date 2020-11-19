@@ -5,23 +5,68 @@ html {
 
 body {
   // font-family: sans-serif;
-  // display: flex;
-  // flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-  // text-align: center;
-  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  // margin-bottom: 2rem;
+}
+
+header section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  // margin-bottom: 1rem;
 }
 
-header div {
-  width: 65%;
-  // background-color: blue;
-background-image: url("/assets/img/Foto_01.jpeg");
-object-fit: contain;
+header section div h1 {
+  color: $white;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.logo {
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+}
+
+header section div {
+  background-image: url("/assets/img/Foto_07.jpg");
+  background-size: cover;
+  // background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 75%;
+}
+
+header section p {
+  color: black;
+  font-family: Avenir;
+  font-weight: 500;
+  height: 100%;
+  text-align: center;
+  align-self: center;
+  width: 15%;
+  background-color: $dark-green;
+  overflow: hidden;
+  color: $white;
+  // padding-left: 10px;
+  // line-height: $baseline;
+}
+
+header section div button {
+  margin: 0 0 1rem;
 }
 
 nav {
@@ -35,39 +80,100 @@ nav ul {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 0.5rem;
-  border: 1px solid red;
+  // border: 1px solid red;
   // border-radius: $border-radius;
 }
 
 nav ul li {
-  // padding: 0.2rem;
+  border: 1px solid $red;
+  text-align: center;
+  width: 5rem;
+  // padding: 0.2rem 1rem;
   // border-bottom: 3px solid #754575;
   // margin-bottom: 0;
 }
 
 nav ul li a {
   text-decoration: none;
+  color: $red;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.5rem;
 }
 
 main {
-  // width: 85vw;
-  // align-self: center;
+  width: 85vw;
+  display: flex;
+  flex-direction: column;
+  // flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
 }
 
 section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   // display: flex;
   // flex-direction: column;
   // align-items: center;
   // padding: 1rem 2rem;
   // // border-radius: 6px;
-  // // background: #fefefe;
   // // box-shadow: inset 6px 6px 9px #f1f1f1, inset -6px -6px 9px #ffffff;
   // margin-bottom: 2rem;
 }
 
 article {
+  // background-color: #fefefe;
   background-color: $white;
-  // border: 1px solid $grey
+  border-radius: $border-radius;
+  // border: 1px 0 2px 6px 0 rgba(0,0,0,.15)solid $grey;
+  // box-shadow: 1.5px 1.5px 2px #f1f1f1, -1.5px -1.5px 2px #ffffff;
+  display: flex;
+  margin: 1rem;
+}
+
+article h3 {
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  // transform: rotate(-180deg);
+  text-align: center;
+  background-color: $red;
+  color: $white;
+  padding: 0 0.5rem;
+  // width: 100%;
+}
+
+article:nth-child(odd) h3 {
+  transform: rotate(-180deg);
+}
+
+article:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+article p {
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,.15);
+  // padding: 1rem 1.4rem 1rem 0;
+  padding: 1rem;
+  // margin-bottom: 2rem;
+  margin: 0.5rem 0;
+  min-width: 10rem;
+  max-width: 15rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+blockquote,
+blockquote p,
+figcaption,
+figure {
+  width: 100%;
 }
 
 span {}
@@ -76,22 +182,51 @@ blockquote {}
 
 img {}
 
-h1 {
-  background-color: $red;
-  color: $white;
-  display: flex;
-  flex-direction: column;
+h2 {
   text-align: center;
-  // padding: 3rem;
-  width: 25%;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
-h1 span {
-  // margin: 0.4rem 0;
+h3 {
+  // text-decoration: underline;
+  // border-bottom: 1px solid red;
+  // border-bottom-width: thick;
 }
+
+p {}
 /* LAYOUT */
 /* SIZING */
 /* STATE */
+button {
+  border-color: #18af75;
+  background-color: #18af75;
+  color: #fff;
+  border-radius: 2px;
+  letter-spacing: 0.25px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  // text-decoration: none;
+  // border: 1px solid #aaa;
+  // background: 0 0;
+  line-height: 44px;
+  padding: 0 20px;
+  vertical-align: middle;
+}
+
+.link-btn {
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #000;
+  background: 0 0;
+  border: 0;
+  border-bottom: 2px solid #fd000d;
+  text-decoration: none;
+}
+
 button:active {
   background-color: green;
 }

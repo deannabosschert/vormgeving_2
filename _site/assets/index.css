@@ -468,7 +468,7 @@ h2 {
 button {
   border-color: #18af75;
   background-color: #073423;
-  background-image: linear-gradient(to right, #073423 0%, #073423 90%, rgba(24, 175, 117, 0.675) 99%, #18af75 155%);
+  background-image: linear-gradient(to right, #073423 0%, #073423 60%, rgba(24, 175, 117, 0.675) 99%, #18af75 155%);
   color: white;
   border-radius: 5px;
   letter-spacing: 0.25px;

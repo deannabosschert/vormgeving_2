@@ -275,7 +275,7 @@ p {}
 button {
   border-color: $green;
   background-color: $darker-green;
-  background-image: linear-gradient(to right, $darker-green 0%, $darker-green 90%, $semi-green 99%, $green 155%);
+  background-image: linear-gradient(to right, $darker-green 0%, $darker-green 60%, $semi-green 99%, $green 155%);
   color: $white;
   border-radius: $border-radius;
   letter-spacing: 0.25px;

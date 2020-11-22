@@ -29,12 +29,14 @@ header section {
   flex-direction: column;
   // background-image: url("/assets/img/Foto_07.jpg"); // image source: Bron: © Getty Images/iStockphoto
   // background-size: cover;
+
+
   justify-content: center;
   height: 11rem;
   padding-left: 10%;
   // flex-wrap: wrap;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
+  // margin-top: 1rem;
+  // margin-bottom: 0.5rem;
   transform: scaleX(-1);
 }
 
@@ -55,9 +57,14 @@ header section h1 {
   position: absolute;
   z-index: 20;
   top: 0;
-  left: 20px;
-  right: 20px;
-  bottom: 0;
+  right: 30px;
+  // left: 20px;
+  // right: 20px;
+  // bottom: 0;
+  min-height: 20px;
+  max-height: 75px;
+  min-width: 5rem;
+  max-width: 6.5rem;
 }
 //
 // header section div {
@@ -91,9 +98,16 @@ header section button {
 
 header nav {
   min-width: 100%;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  // padding-top: 0.2rem;
   transform: scaleX(-1);
-  background-color: rgba(255, 255, 255, 0.675);
+  z-index: -5;
+  // background-color: rgba(255, 255, 255, 0.675);
+  // background: linear-gradient(0deg, rgba(7,52,35,1) 2%, rgba(7,52,35,1) 90%, rgba(7,52,35,0.9318102240896359) 97%, rgba(7,52,35,0.8) 100%);
+  // background-color: black;
+
+  border-bottom-right-radius: 15px 5px;
+  border-bottom-left-radius: 15px 5px;
 }
 
 header nav ul {
@@ -120,7 +134,7 @@ header nav ul li a {
   text-decoration: none;
   font-weight: 600;
   text-transform: uppercase;
-  color: black;
+  color: white;
   text-align: center;
   padding: 0.5rem;
 }
@@ -264,9 +278,10 @@ p {}
 /* SIZING */
 /* STATE */
 button {
-  border-color: $green;
-  background-color: $green;
-  background-image: linear-gradient(to right, $green 0%, rgba(255, 255, 255, 0.675) 65%, $green 115%);
+  box-shadow: 0 0 0 4px rgba(7, 52, 35, 0.45);
+  // border: 5px solid $transparent-dark-green;
+  // background-color: rgba(7, 52, 35, 0.9);
+  background-image: linear-gradient(to right, $darker-green -10%, $darker-green 60%, $semi-green 99%, $green 155%);
   color: $white;
   border-radius: $border-radius;
   letter-spacing: 0.25px;
@@ -279,8 +294,9 @@ button {
 }
 
 li:hover {
-  background-color: #F8F8F8;
-  border-bottom: 2px solid #fd000d;
+  // background-color: black;
+  // color: white;
+  border-bottom: 2px solid black;
 }
 
 button:hover {
@@ -288,6 +304,8 @@ button:hover {
   // color: $dark-green;
   // border: inset 4px solid $green;
   // box-shadow: inset 3px 3px 4px $green, inset -3px -3px 4px $green;
+  box-shadow: 0px;
+  box-shadow: 0 0 0 4px rgba(24, 175, 117, 0.05);
   background-position: right center;
   color: $white;
   text-decoration: none;

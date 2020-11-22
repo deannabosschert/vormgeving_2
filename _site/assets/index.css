@@ -295,7 +295,6 @@ header section {
   height: 11rem;
   padding-left: 10%;
   margin-top: 1rem;
-  margin-bottom: 0.5rem;
   transform: scaleX(-1);
 }
 
@@ -333,9 +332,11 @@ header section button {
 
 header nav {
   min-width: 100%;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
   transform: scaleX(-1);
-  background-color: rgba(255, 255, 255, 0.675);
+  z-index: -5;
+  border-bottom-right-radius: 15px 5px;
+  border-bottom-left-radius: 15px 5px;
 }
 
 header nav ul {
@@ -358,7 +359,7 @@ header nav ul li a {
   text-decoration: none;
   font-weight: 600;
   text-transform: uppercase;
-  color: black;
+  color: white;
   text-align: center;
   padding: 0.5rem;
 }
@@ -466,8 +467,8 @@ h2 {
 /* STATE */
 button {
   border-color: #18af75;
-  background-color: #18af75;
-  background-image: linear-gradient(to right, #18af75 0%, rgba(255, 255, 255, 0.675) 65%, #18af75 115%);
+  background-color: #073423;
+  background-image: linear-gradient(to right, #073423 0%, #073423 90%, rgba(24, 175, 117, 0.675) 99%, #18af75 155%);
   color: white;
   border-radius: 5px;
   letter-spacing: 0.25px;
@@ -480,8 +481,7 @@ button {
 }
 
 li:hover {
-  background-color: #F8F8F8;
-  border-bottom: 2px solid #fd000d;
+  border-bottom: 2px solid black;
 }
 
 button:hover {

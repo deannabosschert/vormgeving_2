@@ -273,9 +273,10 @@ p {}
 /* SIZING */
 /* STATE */
 button {
-  border-color: $green;
-  background-color: $darker-green;
-  background-image: linear-gradient(to right, $darker-green 0%, $darker-green 60%, $semi-green 99%, $green 155%);
+  box-shadow: 0 0 0 4px rgba(7, 52, 35, 0.45);
+  // border: 5px solid $transparent-dark-green;
+  // background-color: rgba(7, 52, 35, 0.9);
+  background-image: linear-gradient(to right, $darker-green -10%, $darker-green 60%, $semi-green 99%, $green 155%);
   color: $white;
   border-radius: $border-radius;
   letter-spacing: 0.25px;
@@ -298,6 +299,8 @@ button:hover {
   // color: $dark-green;
   // border: inset 4px solid $green;
   // box-shadow: inset 3px 3px 4px $green, inset -3px -3px 4px $green;
+  box-shadow: 0px;
+  box-shadow: 0 0 0 4px rgba(24, 175, 117, 0.05);
   background-position: right center;
   color: $white;
   text-decoration: none;

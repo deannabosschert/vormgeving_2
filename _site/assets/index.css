@@ -466,9 +466,8 @@ h2 {
 /* SIZING */
 /* STATE */
 button {
-  border-color: #18af75;
-  background-color: #073423;
-  background-image: linear-gradient(to right, #073423 0%, #073423 60%, rgba(24, 175, 117, 0.675) 99%, #18af75 155%);
+  box-shadow: 0 0 0 4px rgba(7, 52, 35, 0.45);
+  background-image: linear-gradient(to right, rgba(7, 52, 35, 0.9) -10%, rgba(7, 52, 35, 0.9) 60%, rgba(24, 175, 117, 0.675) 99%, #18af75 155%);
   color: white;
   border-radius: 5px;
   letter-spacing: 0.25px;
@@ -485,6 +484,8 @@ li:hover {
 }
 
 button:hover {
+  box-shadow: 0px;
+  box-shadow: 0 0 0 4px rgba(24, 175, 117, 0.05);
   background-position: right center;
   color: white;
   text-decoration: none;

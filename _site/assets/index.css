@@ -291,6 +291,7 @@ header {
 header section {
   display: flex;
   flex-direction: column;
+  margin-top: 2.5rem;
   justify-content: center;
   height: 11rem;
   padding-left: 10%;
@@ -306,6 +307,7 @@ header section h1 {
 
 .logo {
   position: absolute;
+  margin-top: -2.5rem;
   z-index: 20;
   top: 0;
   right: 30px;
@@ -317,18 +319,19 @@ header section h1 {
 
 header section p {
   font-family: Avenir;
-  font-weight: 500;
+  font-weight: lighter;
   text-align: left;
   width: 65%;
   overflow: hidden;
   color: white;
   margin-bottom: 0.5rem;
+  font-size: 1rem;
 }
 
 header section button {
   width: 7rem;
   padding: 1rem 0.8rem;
-  margin: 0 0 0.5rem;
+  margin: 1rem 0 0.5rem;
 }
 
 header nav {

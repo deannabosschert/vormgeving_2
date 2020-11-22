@@ -35,7 +35,7 @@ header section {
   height: 11rem;
   padding-left: 10%;
   // flex-wrap: wrap;
-  margin-top: 1rem;
+  // margin-top: 1rem;
   // margin-bottom: 0.5rem;
   transform: scaleX(-1);
 }
@@ -57,9 +57,14 @@ header section h1 {
   position: absolute;
   z-index: 20;
   top: 0;
-  left: 20px;
-  right: 20px;
-  bottom: 0;
+  right: 30px;
+  // left: 20px;
+  // right: 20px;
+  // bottom: 0;
+  min-height: 20px;
+  max-height: 75px;
+  min-width: 5rem;
+  max-width: 6.5rem;
 }
 //
 // header section div {

@@ -2,6 +2,8 @@
 html {
   // overflow: auto;
   scroll-behavior: smooth;
+  font-family: sans-serif;
+  font-family: Avenir;
 }
 
 body {
@@ -93,7 +95,7 @@ header section p {
   font-size: $h4;
   // padding: 1.5rem;
   // padding-left: 10px;
-  // line-height: $baseline;
+  line-height: 1.55rem;
 }
 
 header section button {
@@ -132,7 +134,6 @@ header .quote {
 
 main .quote blockquote {
   border-left: 2.5px solid $red;
-
 }
 
 header nav {
@@ -297,7 +298,7 @@ footer p {
   width: 25%;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
-  }
+}
 
 footer img {
   max-width: 100%;
@@ -325,7 +326,6 @@ h3 {
 
 p {}
 
-
 .backToTop {
   position: fixed;
   bottom: 0;
@@ -333,9 +333,8 @@ p {}
   background: black;
   color: white;
   padding: 0.3rem 0.6rem;
-  border-radius: 5px 5px 0px 0px;
+  border-radius: 5px 5px 0 0;
 }
-
 /* LAYOUT */
 /* SIZING */
 /* STATE */
@@ -386,5 +385,4 @@ button:focus {
 button:disabled {
   background-color: grey;
 }
-
 /* THEME */

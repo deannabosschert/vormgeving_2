@@ -16,28 +16,26 @@ header {
   display: flex;
   flex-direction: column;
   margin-bottom: 1.5rem;
-  background-color: $dark-green;
-  background-image: linear-gradient(135deg, #92FFC0 10%, #04111f 100%);
-  background-image: url("/assets/img/Foto_07.jpg"); // image source: Bron: © Getty Images/iStockphoto
-  background-position: 8px left;
-  background-size: cover;
-  transform: scaleX(-1);
 }
 
 header section {
   display: flex;
   flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
   // background-image: url("/assets/img/Foto_07.jpg"); // image source: Bron: © Getty Images/iStockphoto
   // background-size: cover;
-
-
+  background-color: $dark-green;
+  background-image: linear-gradient(135deg, #92FFC0 10%, #04111f 100%);
+  background-image: url("/assets/img/Foto_07.jpg"); // image source: Bron: © Getty Images/iStockphoto
+  background-position: 8px left;
+  background-size: cover;
   justify-content: center;
-  height: 11rem;
+  height: 13rem;
   padding-left: 10%;
   // flex-wrap: wrap;
   // margin-top: 1rem;
   // margin-bottom: 0.5rem;
-  transform: scaleX(-1);
 }
 
 header section * {
@@ -62,9 +60,17 @@ header section h1 {
   // right: 20px;
   // bottom: 0;
   min-height: 20px;
-  max-height: 75px;
-  min-width: 5rem;
-  max-width: 6.5rem;
+  padding: 0 $p;
+  // min-width: 5rem;
+  // max-width: 6.5rem;
+  // min-width: calc(100% / 176px);
+  // width: calc(100% / 10);
+}
+
+.logo::after {
+  content: '®';
+  color: black;
+  font-size: 0.3rem;
 }
 //
 // header section div {
@@ -77,14 +83,14 @@ header section h1 {
 
 header section p {
   font-family: Avenir;
-  font-weight: 500;
+  font-weight: lighter;
   text-align: left;
   // align-self: baseline;
   width: 65%;
   // background-color: $dark-green;
-  overflow: hidden;
   color: $white;
   margin-bottom: 0.5rem;
+  font-size: $h4;
   // padding: 1.5rem;
   // padding-left: 10px;
   // line-height: $baseline;
@@ -93,19 +99,51 @@ header section p {
 header section button {
   width: 7rem;
   padding: 1rem 0.8rem;
-  margin: 0 0 0.5rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.quote {
+  align-self: flex-end;
+  // bottom: 0;
+  // right: 0;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 0.2rem 1rem;
+  border-radius: 5px;
+  font-size: $p;
+}
+
+header .quote {
+  margin-top: -3.2rem;
+  margin-bottom: 1rem;
+  border-left: 2.5px solid $red;
+}
+
+.quote p {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.quote figcaption {
+  font-size: $figcaption;
+  font-weight: lighter;
+  text-align: right;
+}
+
+main .quote blockquote {
+  border-left: 2.5px solid $red;
+
 }
 
 header nav {
   min-width: 100%;
-  margin-top: 2rem;
+  // margin-top: 2rem;
   // padding-top: 0.2rem;
-  transform: scaleX(-1);
-  z-index: -5;
+  // transform: scaleX(-1);
+  // z-index: -5;
   // background-color: rgba(255, 255, 255, 0.675);
   // background: linear-gradient(0deg, rgba(7,52,35,1) 2%, rgba(7,52,35,1) 90%, rgba(7,52,35,0.9318102240896359) 97%, rgba(7,52,35,0.8) 100%);
   // background-color: black;
-
   border-bottom-right-radius: 15px 5px;
   border-bottom-left-radius: 15px 5px;
 }
@@ -126,7 +164,7 @@ header nav ul li {
   width: 5rem;
   // border: 1px solid #aaa;
   border-radius: 2px;
-  border-bottom: 2px solid #fd000d;
+  border-bottom: 2.5px solid #fd000d;
   padding: 0.1rem 0.3rem;
 }
 
@@ -134,9 +172,9 @@ header nav ul li a {
   text-decoration: none;
   font-weight: 600;
   text-transform: uppercase;
-  color: white;
+  color: black;
   text-align: center;
-  padding: 0.5rem;
+  padding: 0.1rem 0.5rem;
 }
 
 main {
@@ -161,7 +199,7 @@ main section {
   // padding: 1rem 2rem;
   // // border-radius: 6px;
   // // box-shadow: inset 6px 6px 9px #f1f1f1, inset -6px -6px 9px #ffffff;
-  // margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 article {
@@ -172,7 +210,7 @@ article {
   // box-shadow: 1.5px 1.5px 2px #f1f1f1, -1.5px -1.5px 2px #ffffff;
   display: flex;
   margin: 1rem;
-  min-width: 25rem;
+  // min-width: 25rem;
   // max-width: 40vw;
 }
 
@@ -181,7 +219,7 @@ article h3 {
   text-orientation: sideways;
   // transform: rotate(-180deg);
   text-align: center;
-  background-color: $red;
+  background-color: $almost-red;
   color: $white;
   padding: 0 0.5rem;
   // width: 100%;
@@ -207,13 +245,17 @@ article p {
   max-width: 15rem;
 }
 
-main section figure {
+main section div {
+  // max-height: 10rem;
+}
+
+main section .video {
   position: relative;
   display: flex;
   flex-direction: column-reverse;
 }
 
-main section figure img {
+main section .video img {
   display: block;
   object-fit: contain;
   // width: 100%;
@@ -222,9 +264,9 @@ main section figure img {
 }
 // SMOL PARTS
 
-main section figure figcaption {
+main section .video figcaption {
   position: absolute;
-  left: 27.5%;
+  left: 2.5%;
   color: lightgrey;
   font-size: $h6;
 }
@@ -248,11 +290,19 @@ footer {
   width: 100vw;
 }
 
-blockquote,
-blockquote p,
-figcaption,
-figure {
-  width: 100%;
+footer p {
+  display: flex;
+  justify-content: space-between;
+  max-height: 2rem;
+  width: 25%;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  }
+
+footer img {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 0 0.5rem;
 }
 
 span {}
@@ -274,11 +324,23 @@ h3 {
 }
 
 p {}
+
+
+.backToTop {
+  position: fixed;
+  bottom: 0;
+  right: 30px;
+  background: black;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px 5px 0px 0px;
+}
+
 /* LAYOUT */
 /* SIZING */
 /* STATE */
 button {
-  box-shadow: 0 0 0 4px rgba(7, 52, 35, 0.45);
+  box-shadow: 0 0 0 2px rgba(7, 52, 35, 0.45);
   // border: 5px solid $transparent-dark-green;
   // background-color: rgba(7, 52, 35, 0.9);
   background-image: linear-gradient(to right, $darker-green -10%, $darker-green 60%, $semi-green 99%, $green 155%);
@@ -304,12 +366,11 @@ button:hover {
   // color: $dark-green;
   // border: inset 4px solid $green;
   // box-shadow: inset 3px 3px 4px $green, inset -3px -3px 4px $green;
-  box-shadow: 0px;
-  box-shadow: 0 0 0 4px rgba(24, 175, 117, 0.05);
+  box-shadow: 0;
+  box-shadow: 0 0 0 2px rgba(24, 175, 117, 0.05);
   background-position: right center;
   color: $white;
   text-decoration: none;
-
 }
 
 button:active {
@@ -320,10 +381,10 @@ button:focus {
   background-color: $white;
   color: black;
   box-shadow: inset 3px 3px 4px $green, inset -3px -3px 4px $green;
-
 }
 
 button:disabled {
   background-color: grey;
 }
+
 /* THEME */

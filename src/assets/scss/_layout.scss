@@ -15,7 +15,7 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  // margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 header section {
@@ -102,10 +102,8 @@ header section button {
   margin: 1rem 0 0.5rem;
 }
 
-header figure {
+.quote {
   align-self: flex-end;
-  margin-top: -3.2rem;
-  margin-bottom: 1rem;
   // bottom: 0;
   // right: 0;
   color: black;
@@ -113,18 +111,28 @@ header figure {
   padding: 0.2rem 1rem;
   border-radius: 5px;
   font-size: $p;
+}
+
+header .quote {
+  margin-top: -3.2rem;
+  margin-bottom: 1rem;
   border-left: 2.5px solid $red;
 }
 
-header figure p {
+.quote p {
   font-weight: 500;
   font-style: italic;
 }
 
-header figure figcaption {
+.quote figcaption {
   font-size: $figcaption;
   font-weight: lighter;
   text-align: right;
+}
+
+main .quote blockquote {
+  border-left: 2.5px solid $red;
+
 }
 
 header nav {
@@ -191,7 +199,7 @@ main section {
   // padding: 1rem 2rem;
   // // border-radius: 6px;
   // // box-shadow: inset 6px 6px 9px #f1f1f1, inset -6px -6px 9px #ffffff;
-  // margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 article {
@@ -202,7 +210,7 @@ article {
   // box-shadow: 1.5px 1.5px 2px #f1f1f1, -1.5px -1.5px 2px #ffffff;
   display: flex;
   margin: 1rem;
-  min-width: 25rem;
+  // min-width: 25rem;
   // max-width: 40vw;
 }
 
@@ -211,7 +219,7 @@ article h3 {
   text-orientation: sideways;
   // transform: rotate(-180deg);
   text-align: center;
-  background-color: $red;
+  background-color: $almost-red;
   color: $white;
   padding: 0 0.5rem;
   // width: 100%;
@@ -237,13 +245,13 @@ article p {
   max-width: 15rem;
 }
 
-main section figure {
+main section .video {
   position: relative;
   display: flex;
   flex-direction: column-reverse;
 }
 
-main section figure img {
+main section .video img {
   display: block;
   object-fit: contain;
   // width: 100%;
@@ -252,9 +260,9 @@ main section figure img {
 }
 // SMOL PARTS
 
-main section figure figcaption {
+main section .video figcaption {
   position: absolute;
-  left: 27.5%;
+  left: 2.5%;
   color: lightgrey;
   font-size: $h6;
 }
@@ -277,16 +285,20 @@ footer {
   justify-content: center;
   width: 100vw;
 }
-//
-// blockquote,
-// blockquote p,
-// figcaption,
-// figure {
-//   width: 100%;
-// }
 
-main figure {
-  width: 100vw;
+footer p {
+  display: flex;
+  justify-content: space-between;
+  max-height: 2rem;
+  width: 25%;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  }
+
+footer img {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 0 0.5rem;
 }
 
 span {}
@@ -308,6 +320,18 @@ h3 {
 }
 
 p {}
+
+
+.backToTop {
+  position: fixed;
+  bottom: 0;
+  right: 30px;
+  background: black;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px 5px 0px 0px;
+}
+
 /* LAYOUT */
 /* SIZING */
 /* STATE */
@@ -358,4 +382,5 @@ button:focus {
 button:disabled {
   background-color: grey;
 }
+
 /* THEME */

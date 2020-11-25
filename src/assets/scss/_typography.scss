@@ -1,52 +1,52 @@
-// Sources for the fluid typography: https://codepen.io/MadeByMike/pen/bEEGvv?editors%3D0100 and https://www.smashingmagazine.com/2016/05/fluid-typography/
-/* Older browsers */
-html {
-  font-size: 16px;
-}
-/* Modern browsers only need this one */
-@media screen and (min-width: 25em) {
-  html {
-    font-size: calc(16px + (24 - 16) * (100vw - 400px) / (800 - 400));
-  }
-}
-/* Safari <8 and IE <11 */
-@media screen and (min-width: 25em) {
-  html {
-    font-size: calc(16px + (24 - 16) * (100vw - 400px) / (800 - 400));
-  }
-}
-@media screen and (min-width: 50em) {
-  html {
-    font-size: calc(16px + (24 - 16) * (100vw - 400px) / (800 - 400));
-  }
-}
-@mixin fluid-type($properties, $min-vw, $max-vw, $min-value, $max-value) {
-  & {
-    @each $property in $properties {
-      #{$property}: $min-value;
-    }
-    @media screen and (min-width: $min-vw) {
-      @each $property in $properties {
-        #{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
-      }
-    }
-    @media screen and (min-width: $max-vw) {
-      @each $property in $properties {
-        #{$property}: $max-value;
-      }
-    }
-  }
-}
-@function strip-unit($value) {
-  @return $value / ($value * 0 + 1);
-}
-
-html {
-  height: 100%;
-  font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  @include fluid-type(font-size, $minScreen, $maxScreen, $minFont, $maxFont);
-}
+// // Sources for the fluid typography: https://codepen.io/MadeByMike/pen/bEEGvv?editors%3D0100 and https://www.smashingmagazine.com/2016/05/fluid-typography/
+// /* Older browsers */
+// html {
+//   font-size: 16px;
+// }
+// /* Modern browsers only need this one */
+// @media screen and (min-width: 25em) {
+//   html {
+//     font-size: calc(16px + (24 - 16) * (100vw - 400px) / (800 - 400));
+//   }
+// }
+// /* Safari <8 and IE <11 */
+// @media screen and (min-width: 25em) {
+//   html {
+//     font-size: calc(16px + (24 - 16) * (100vw - 400px) / (800 - 400));
+//   }
+// }
+// @media screen and (min-width: 50em) {
+//   html {
+//     font-size: calc(16px + (24 - 16) * (100vw - 400px) / (800 - 400));
+//   }
+// }
+// @mixin fluid-type($properties, $min-vw, $max-vw, $min-value, $max-value) {
+//   & {
+//     @each $property in $properties {
+//       #{$property}: $min-value;
+//     }
+//     @media screen and (min-width: $min-vw) {
+//       @each $property in $properties {
+//         #{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+//       }
+//     }
+//     @media screen and (min-width: $max-vw) {
+//       @each $property in $properties {
+//         #{$property}: $max-value;
+//       }
+//     }
+//   }
+// }
+// @function strip-unit($value) {
+//   @return $value / ($value * 0 + 1);
+// }
+//
+// html {
+//   height: 100%;
+//   font-smoothing: antialiased;
+//   text-rendering: optimizeLegibility;
+//   @include fluid-type(font-size, $minScreen, $maxScreen, $minFont, $maxFont);
+// }
 
 body {
   line-height: $baseline;
@@ -54,7 +54,7 @@ body {
 }
 
 p {
-  line-height: $baseline;
+  // line-height: $baseline;
   // margin-bottom: $baseline;
 }
 
@@ -117,6 +117,7 @@ h6 {
 
 p {
   font-size: $p;
+  line-height: $baseline;
 }
 
 a {
@@ -125,19 +126,26 @@ a {
 }
 
 button {
-  font-size: $p;
+  font-size: $h5;
 }
 
 .logo {
   background-color: $red;
   color: white;
   text-align: center;
-  // letter-spacing: 0.5px;
-
-  // width: 8rem;
-  // padding: 0 0.25rem;
 }
 
 .logo span {
   color: black;
+}
+
+header section p {
+  font-family: Avenir;
+  font-weight: 400;
+  font-size: $h4;
+  line-height: $h2;
+}
+
+figure p {
+  font-size: $h6;
 }

@@ -204,7 +204,7 @@ p {
 
 a {
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 button {
@@ -220,6 +220,11 @@ header section p {
 
 figure p {
   font-size: 1.3rem;
+  line-height: 1.3rem;
+}
+
+main figure p {
+  line-height: 1.6;
 }
 
 main section .video figcaption {
@@ -229,6 +234,7 @@ main section .video figcaption {
 .logo {
   font-family: Avenir Black;
   font-weight: bold;
+  font-size: 1.1rem;
   background-color: red;
   color: white;
   text-align: center;
@@ -287,7 +293,7 @@ header section {
 header section h1 {
   color: white;
   text-align: left;
-  margin-left: 5.5rem;
+  margin-left: 10%;
   margin-bottom: 1rem;
 }
 
@@ -296,13 +302,13 @@ header section p {
   width: 65%;
   color: white;
   margin-bottom: 1.5rem;
-  margin-left: 5.5rem;
+  margin-left: 10%;
 }
 
 header section button {
   width: 14rem;
   padding: 2rem 1rem;
-  margin-left: 5.5rem;
+  margin-left: 10%;
 }
 
 header nav {
@@ -315,25 +321,37 @@ header nav ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 0.5rem;
+  justify-content: space-evenly;
+  margin: 0 2rem;
 }
 
+@media screen and (max-width: 560px) {
+  header nav ul {
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 480px) {
+  header nav ul li {
+    min-width: 35%;
+  }
+}
 header nav ul li {
+  align-self: center;
   text-align: center;
-  width: 7rem;
   border-radius: 2px;
   border-bottom: 2.5px solid #fd000d;
-  padding: 0.1rem 0.3rem;
+  /* padding: 0.1rem 0.3rem; */
+  margin: 2rem;
 }
 
 header nav ul li a {
-  text-decoration: none;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: black;
   text-align: center;
-  padding: 0.1rem 0.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: black;
+  width: 100%;
+  padding: 0 1.5rem 1rem;
 }
 
 main {

@@ -138,6 +138,11 @@ header section p {
 
 figure p {
   font-size: $h6;
+  line-height: $h6;
+}
+
+main figure p {
+  line-height: 1.6;
 }
 
 main section .video figcaption {

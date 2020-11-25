@@ -122,21 +122,11 @@ p {
 
 a {
   text-decoration: none;
-  font-size: $p;
+  font-size: $h5;
 }
 
 button {
   font-size: $h5;
-}
-
-.logo {
-  background-color: $red;
-  color: white;
-  text-align: center;
-}
-
-.logo span {
-  color: black;
 }
 
 header section p {
@@ -148,4 +138,32 @@ header section p {
 
 figure p {
   font-size: $h6;
+  line-height: $h6;
+}
+
+main figure p {
+  line-height: 1.6;
+}
+
+main section .video figcaption {
+  font-size: $h6;
+}
+
+.logo {
+  font-family: Avenir Black;
+  font-weight: bold;
+  font-size: $p;
+  background-color: $red;
+  color: white;
+  text-align: center;
+}
+
+.logo span {
+  color: black;
+}
+
+.logo::after {
+  content: '®';
+  color: black;
+  font-size: 0.3rem;
 }

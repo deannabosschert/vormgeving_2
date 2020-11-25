@@ -155,53 +155,8 @@ table {
   font-style: italic;
   font-display: swap;
 }
-/* Older browsers */
-html {
-  font-size: 16px;
-}
-
-/* Modern browsers only need this one */
-@media screen and (min-width: 25em) {
-  html {
-    font-size: calc(16px + (24 - 16) * (100vw - 400px) / (800 - 400));
-  }
-}
-/* Safari <8 and IE <11 */
-@media screen and (min-width: 25em) {
-  html {
-    font-size: calc(16px + (24 - 16) * (100vw - 400px) / (800 - 400));
-  }
-}
-@media screen and (min-width: 50em) {
-  html {
-    font-size: calc(16px + (24 - 16) * (100vw - 400px) / (800 - 400));
-  }
-}
-html {
-  height: 100%;
-  font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-html {
-  font-size: 0.8rem;
-}
-@media screen and (min-width: 20rem) {
-  html {
-    font-size: calc(0.8rem + 1.2 * ((100vw - 20rem) / 30));
-  }
-}
-@media screen and (min-width: 50rem) {
-  html {
-    font-size: 2rem;
-  }
-}
-
 body {
-  line-height: 1.2rem;
-}
-
-p {
-  line-height: 1.2rem;
+  line-height: 1.3rem;
 }
 
 html {
@@ -213,46 +168,47 @@ h1, h2, h3, h4, .logo {
 }
 
 h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+}
+
+h3 {
   font-size: 2rem;
   line-height: 2rem;
 }
 
-h2 {
-  font-size: 1.7rem;
-  line-height: 1.7rem;
-}
-
-h3 {
-  font-size: 1.6rem;
-  line-height: 1.6rem;
-}
-
 h4 {
-  font-size: 1rem;
-  line-height: 1rem;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
 }
 
 h5 {
-  font-size: 0.875rem;
-  line-height: 0.875rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
 }
 
 h6 {
-  font-size: 0.75rem;
-  line-height: 0.75rem;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
 }
 
 p {
-  font-size: 0.6rem;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
 }
 
 a {
   text-decoration: none;
-  font-size: 0.6rem;
+  font-size: 1.1rem;
 }
 
 button {
-  font-size: 0.6rem;
+  font-size: 1.5rem;
 }
 
 .logo {
@@ -265,11 +221,23 @@ button {
   color: black;
 }
 
+header section p {
+  font-family: Avenir;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+
+figure p {
+  font-size: 1.5rem;
+}
+
 /* BASE */
 html {
   scroll-behavior: smooth;
   font-family: sans-serif;
   font-family: Avenir;
+  height: 100%;
 }
 
 body {
@@ -287,86 +255,46 @@ header {
 
 header section {
   display: flex;
-  flex-direction: column;
-  padding-top: 2rem;
-  padding-bottom: 4rem;
+  align-items: center;
+  padding-top: 3.5rem;
+  padding-bottom: 5.5rem;
   background-color: #04111f;
   background-image: linear-gradient(135deg, #92FFC0 10%, #04111f 100%);
   background-image: url("/assets/img/Foto_07.jpg");
-  background-position: 8px left;
   background-size: cover;
+  height: 15rem;
+  max-width: 100vw;
+  transform: scaleX(1);
+}
+
+.backdrop-filter {
+  height: 26rem;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  height: 13rem;
-  padding-left: 10%;
+  backdrop-filter: brightness(0.8);
+  transform: scaleX(1);
 }
 
 header section h1 {
   color: white;
   text-align: left;
-  padding: 1rem 0;
   width: 100%;
-}
-
-.logo {
-  position: absolute;
-  z-index: 20;
-  top: 0;
-  right: 30px;
-  min-height: 20px;
-  padding: 0 0.6rem;
-}
-
-.logo::after {
-  content: "®";
-  color: black;
-  font-size: 0.3rem;
+  margin: 7.5rem 0rem 2.5rem 4.5rem;
 }
 
 header section p {
-  font-family: Avenir;
-  font-weight: lighter;
   text-align: left;
   width: 65%;
   color: white;
   margin-bottom: 0.5rem;
-  font-size: 1rem;
-  line-height: 1.55rem;
+  margin-left: 4.5rem;
 }
 
 header section button {
-  width: 7rem;
-  padding: 1rem 0.8rem;
-  margin: 1rem 0 0.5rem;
-}
-
-.quote {
-  align-self: flex-end;
-  color: black;
-  background-color: rgba(255, 255, 255, 0.95);
-  padding: 0.2rem 1rem;
-  border-radius: 5px;
-  font-size: 0.6rem;
-}
-
-header .quote {
-  margin-top: -3.2rem;
-  margin-bottom: 1rem;
-  border-left: 2.5px solid red;
-}
-
-.quote p {
-  font-weight: 500;
-  font-style: italic;
-}
-
-.quote figcaption {
-  font-size: 0.55rem;
-  font-weight: lighter;
-  text-align: right;
-}
-
-main .quote blockquote {
-  border-left: 2.5px solid red;
+  width: 14rem;
+  padding: 2rem 1rem;
+  margin: 1rem 4.5rem 4rem;
 }
 
 header nav {
@@ -385,7 +313,7 @@ header nav ul {
 
 header nav ul li {
   text-align: center;
-  width: 5rem;
+  width: 7rem;
   border-radius: 2px;
   border-bottom: 2.5px solid #fd000d;
   padding: 0.1rem 0.3rem;
@@ -443,6 +371,52 @@ article:nth-child(even) {
   flex-direction: row-reverse;
 }
 
+.logo {
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  right: 30px;
+  min-height: 20px;
+  padding: 0 1.1rem;
+}
+
+.logo::after {
+  content: "®";
+  color: black;
+  font-size: 0.3rem;
+}
+
+.quote {
+  align-self: flex-end;
+  z-index: 10;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 0.2rem 1rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+header .quote {
+  margin-top: -3.2rem;
+  margin-bottom: 1rem;
+  border-left: 2.5px solid red;
+}
+
+.quote p {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.quote figcaption {
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: right;
+}
+
+main .quote blockquote {
+  border-left: 2.5px solid red;
+}
+
 article p {
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
   padding: 1rem 2rem 1rem 1.5rem;
@@ -464,7 +438,7 @@ main section .video figcaption {
   position: absolute;
   left: 2.5%;
   color: lightgrey;
-  font-size: 0.75rem;
+  font-size: 1.3rem;
 }
 
 .arrow-right {

@@ -167,30 +167,9 @@ article:nth-child(even) {
   z-index: 20;
   top: 0;
   right: 30px;
-  // left: 20px;
-  // right: 20px;
-  // bottom: 0;
   min-height: 20px;
   padding: 0 $p;
-  // min-width: 5rem;
-  // max-width: 6.5rem;
-  // min-width: calc(100% / 176px);
-  // width: calc(100% / 10);
 }
-
-.logo::after {
-  content: '®';
-  color: black;
-  font-size: 0.3rem;
-}
-//
-// header section div {
-//   display: flex;
-//   flex-direction: row;
-//   flex-wrap: wrap;
-//   justify-content: center;
-//   width: 75%;
-// }
 
 .quote {
   align-self: flex-end;
@@ -199,7 +178,6 @@ article:nth-child(even) {
   background-color: rgba(255, 255, 255, 0.95);
   padding: 1.5rem 1.2rem;
   border-radius: 5px;
-  font-size: $p;
 }
 
 header .quote {
@@ -227,16 +205,8 @@ main .quote blockquote {
 
 article p {
   box-shadow: 0 2px 6px 0 rgba(0,0,0,.15);
-  // padding: 1rem 1.4rem 1rem 0;
   padding: 1rem 2rem 1rem 1.5rem;
-  // margin-bottom: 2rem;
-  // margin: 0.5rem 0;
-  // min-width: 10rem;
   max-width: 15rem;
-}
-
-main section div {
-  // max-height: 10rem;
 }
 
 main section .video {
@@ -258,7 +228,6 @@ main section .video figcaption {
   position: absolute;
   left: 2.5%;
   color: lightgrey;
-  font-size: $h6;
 }
 
 .arrow-right {
@@ -344,8 +313,6 @@ button {
 }
 
 li:hover {
-  // background-color: black;
-  // color: white;
   border-bottom: 2px solid black;
 }
 
@@ -362,12 +329,13 @@ button:hover {
 }
 
 button:active {
-  background-color: blue;
+  background-color: green;
 }
 
 button:focus {
   background-color: $white;
-  color: black;
+  color: white;
+  border: 1px solid white;
   box-shadow: inset 3px 3px 4px $green, inset -3px -3px 4px $green;
 }
 

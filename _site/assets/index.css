@@ -211,16 +211,6 @@ button {
   font-size: 1.5rem;
 }
 
-.logo {
-  background-color: red;
-  color: white;
-  text-align: center;
-}
-
-.logo span {
-  color: black;
-}
-
 header section p {
   font-family: Avenir;
   font-weight: 400;
@@ -230,6 +220,28 @@ header section p {
 
 figure p {
   font-size: 1.3rem;
+}
+
+main section .video figcaption {
+  font-size: 1.3rem;
+}
+
+.logo {
+  font-family: Avenir Black;
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+.logo span {
+  color: black;
+}
+
+.logo::after {
+  content: "®";
+  color: black;
+  font-size: 0.3rem;
 }
 
 /* BASE */
@@ -376,12 +388,6 @@ article:nth-child(even) {
   padding: 0 1.1rem;
 }
 
-.logo::after {
-  content: "®";
-  color: black;
-  font-size: 0.3rem;
-}
-
 .quote {
   align-self: flex-end;
   z-index: 10;
@@ -389,7 +395,6 @@ article:nth-child(even) {
   background-color: rgba(255, 255, 255, 0.95);
   padding: 1.5rem 1.2rem;
   border-radius: 5px;
-  font-size: 1.1rem;
 }
 
 header .quote {
@@ -436,7 +441,6 @@ main section .video figcaption {
   position: absolute;
   left: 2.5%;
   color: lightgrey;
-  font-size: 1.3rem;
 }
 
 .arrow-right {
@@ -518,12 +522,13 @@ button:hover {
 }
 
 button:active {
-  background-color: blue;
+  background-color: green;
 }
 
 button:focus {
   background-color: white;
-  color: black;
+  color: white;
+  border: 1px solid white;
   box-shadow: inset 3px 3px 4px #18af75, inset -3px -3px 4px #18af75;
 }
 

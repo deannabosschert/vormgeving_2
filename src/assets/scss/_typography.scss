@@ -129,16 +129,6 @@ button {
   font-size: $h5;
 }
 
-.logo {
-  background-color: $red;
-  color: white;
-  text-align: center;
-}
-
-.logo span {
-  color: black;
-}
-
 header section p {
   font-family: Avenir;
   font-weight: 400;
@@ -148,4 +138,26 @@ header section p {
 
 figure p {
   font-size: $h6;
+}
+
+main section .video figcaption {
+  font-size: $h6;
+}
+
+.logo {
+  font-family: Avenir Black;
+  font-weight: bold;
+  background-color: $red;
+  color: white;
+  text-align: center;
+}
+
+.logo span {
+  color: black;
+}
+
+.logo::after {
+  content: '®';
+  color: black;
+  font-size: 0.3rem;
 }

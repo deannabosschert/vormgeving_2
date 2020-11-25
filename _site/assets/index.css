@@ -235,8 +235,6 @@ figure p {
 /* BASE */
 html {
   scroll-behavior: smooth;
-  font-family: sans-serif;
-  font-family: Avenir;
   height: 100%;
 }
 
@@ -494,7 +492,7 @@ h2 {
 /* SIZING */
 /* STATE */
 button {
-  box-shadow: 0 0 0 2px rgba(7, 52, 35, 0.45);
+  box-shadow: 0 0 0 2px rgba(31, 72, 56, 0.4);
   background-image: linear-gradient(to right, rgba(7, 52, 35, 0.9) -10%, rgba(7, 52, 35, 0.9) 60%, rgba(24, 175, 117, 0.675) 99%, #18af75 155%);
   color: white;
   border-radius: 5px;

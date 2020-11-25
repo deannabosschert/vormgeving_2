@@ -2,13 +2,10 @@
 html {
   // overflow: auto;
   scroll-behavior: smooth;
-  font-family: sans-serif;
-  font-family: Avenir;
   height: 100%;
 }
 
 body {
-  // font-family: sans-serif;
   display: flex;
   flex-direction: column;
   max-width: 100vw;
@@ -22,59 +19,32 @@ header {
 }
 
 header section {
-  // display: flex;
-  // flex-direction: row;
-  // align-content: stretch;
   height: $headerheight;
-  // padding-top: $headerpaddingtop;
   padding-bottom: $headerpaddingbottom;
-  // background-image: url("/assets/img/Foto_07.jpg"); // image source: Bron: © Getty Images/iStockphoto
-  // background-size: cover;
   background-color: $dark-green;
   background-image: linear-gradient(135deg, #92FFC0 10%, #04111f 100%);
   background-image: url("/assets/img/Foto_07.jpg"); // image source: Bron: © Getty Images/iStockphoto
-  // backdrop-filter: brightness(0.5);
-  // background-position: 8px left;
   background-size: cover;
-  // justify-content: center;
   max-width: 100vw;
   transform: scaleX(-1);
-  // padding-right: 20%;
 }
 
 header section a, header section h1, header section p, header section button {
 }
 
 .backdrop-filter {
-  // height: calc($headerheight + $headerpaddingbottom + $headerpaddingtop);
   display: flex;
   flex-direction: column;
   height: $headerheight;
   padding-top: $headerpaddingtop;
   padding-bottom: 6.5rem;
-
-  // height: 100%;
-  // margin-top: 4.5rem;
-  // padding-top: 7.5rem;
-  // justify-content: center;
-
-  // padding: inherit;
-  // position: absolute;
-  // transform: scaleX(-1);
   backdrop-filter: brightness(0.8);
-  // padding-bottom: 4rem;
-  // margin: 2rem;
   transform: scaleX(-1);
-
 }
 
 header section h1 {
   color: $white;
   text-align: left;
-  // margin-top: 3.25rem;
-  // padding: 1.2rem 0;
-  // width: 100%;
-  // margin: 7.5rem 0rem 2.5rem 4.5rem;
   margin-left: 5.5rem;
   margin-bottom: 1rem;
 }
@@ -358,7 +328,7 @@ p {}
 /* SIZING */
 /* STATE */
 button {
-  box-shadow: 0 0 0 2px rgba(7, 52, 35, 0.45);
+  box-shadow: 0 0 0 2px rgba(31, 72, 56, 0.4);
   // border: 5px solid $transparent-dark-green;
   // background-color: rgba(7, 52, 35, 0.9);
   background-image: linear-gradient(to right, $darker-green -10%, $darker-green 60%, $semi-green 99%, $green 155%);

@@ -88,9 +88,9 @@ header nav ul {
     min-width: 30%;
   }
 }
-// @media screen and (min-width: 1300px) {
+// @media screen and (min-width: 900px) {
 //   article {
-//     max-width: 45%;
+//     min-width: 50%;
 //   }
 // }
 
@@ -215,8 +215,51 @@ main .quote blockquote {
 
 article p {
   box-shadow: 0 2px 6px 0 rgba(0,0,0,.15);
-  padding: 1rem 2rem 1rem 1.5rem;
-  max-width: 15rem;
+  padding: 2rem 2rem 1rem 1.5rem;
+  margin: 0.5rem 0;
+  max-width: 80%;
+}
+@media screen and (max-width: 475px) {
+  header .quote {
+    margin-top: 6rem;
+  }
+
+  header section p, header section h1 {
+    text-align: center;
+    align-self: center;
+    margin-left: 0%;
+  }
+
+  header section button {
+    align-self: center;
+    margin-left: 0%;
+  }
+
+  header .quote {
+    margin-left: 5%;
+  }
+
+  section article {
+    flex-direction: column;
+  }
+
+  section article h3 {
+    writing-mode: horizontal-lr;
+    text-orientation: initial; 
+    /* writing-mode: vertical-rl; */
+// /* text-orientation: s
+  }
+}
+//
+// @media screen and (max-width: 900px) {
+//   article {
+//     max-width: 30%;
+//   }
+// }
+@media screen and (min-width: 900px) {
+  article {
+    max-width: 40%;
+  }
 }
 
 main section .video {
@@ -351,5 +394,21 @@ button:focus {
 
 button:disabled {
   background-color: grey;
+}
+
+.clickedButton {
+  box-shadow: 0 0 0 2px rgba(31, 72, 56, 0.4);
+  // border: 5px solid $transparent-dark-green;
+  // background-color: rgba(7, 52, 35, 0.9);
+  background-image: linear-gradient(to right, $green -10%, $green 60%, $semi-green 99%, white 155%);
+  color: $white;
+  border-radius: $border-radius;
+  letter-spacing: 0.25px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  transition: 0.5s;
+  background-size: 200% auto;
 }
 /* THEME */

@@ -156,7 +156,7 @@ table {
   font-display: swap;
 }
 body {
-  line-height: 1.3rem;
+  line-height: 1.9rem;
 }
 
 html {
@@ -188,27 +188,27 @@ h4 {
 }
 
 h5 {
-  font-size: 1.5rem;
-  line-height: 1.5rem;
+  font-size: 1.62rem;
+  line-height: 1.62rem;
 }
 
 h6 {
-  font-size: 1.3rem;
-  line-height: 1.3rem;
+  font-size: 1.45rem;
+  line-height: 1.45rem;
 }
 
 p {
-  font-size: 1.1rem;
-  line-height: 1.3rem;
+  font-size: 1.3rem;
+  line-height: 1.9rem;
 }
 
 a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.62rem;
 }
 
 button {
-  font-size: 1.5rem;
+  font-size: 1.62rem;
 }
 
 header section p {
@@ -219,8 +219,8 @@ header section p {
 }
 
 figure p {
-  font-size: 1.3rem;
-  line-height: 1.3rem;
+  font-size: 1.45rem;
+  line-height: 1.45rem;
 }
 
 main figure p {
@@ -228,13 +228,13 @@ main figure p {
 }
 
 main section .video figcaption {
-  font-size: 1.3rem;
+  font-size: 1.45rem;
 }
 
 .logo {
   font-family: Avenir Black;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   background-color: red;
   color: white;
   text-align: center;
@@ -403,7 +403,7 @@ article:nth-child(even) {
   top: 0;
   right: 30px;
   min-height: 20px;
-  padding: 0 1.1rem;
+  padding: 0 1.3rem;
 }
 
 .quote {
@@ -440,10 +440,46 @@ main .quote blockquote {
 
 article p {
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
-  padding: 1rem 2rem 1rem 1.5rem;
-  max-width: 15rem;
+  padding: 2rem 2rem 1rem 1.5rem;
+  margin: 0.5rem 0;
+  max-width: 80%;
 }
 
+@media screen and (max-width: 475px) {
+  header .quote {
+    margin-top: 6rem;
+  }
+
+  header section p, header section h1 {
+    text-align: center;
+    align-self: center;
+    margin-left: 0%;
+  }
+
+  header section button {
+    align-self: center;
+    margin-left: 0%;
+  }
+
+  header .quote {
+    margin-left: 5%;
+  }
+
+  section article {
+    flex-direction: column;
+  }
+
+  section article h3 {
+    writing-mode: horizontal-lr;
+    text-orientation: initial;
+    /* writing-mode: vertical-rl; */
+  }
+}
+@media screen and (min-width: 900px) {
+  article {
+    max-width: 40%;
+  }
+}
 main section .video {
   position: relative;
   display: flex;
@@ -552,6 +588,20 @@ button:focus {
 
 button:disabled {
   background-color: grey;
+}
+
+.clickedButton {
+  box-shadow: 0 0 0 2px rgba(31, 72, 56, 0.4);
+  background-image: linear-gradient(to right, #18af75 -10%, #18af75 60%, rgba(24, 175, 117, 0.675) 99%, white 155%);
+  color: white;
+  border-radius: 5px;
+  letter-spacing: 0.25px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  transition: 0.5s;
+  background-size: 200% auto;
 }
 
 /* THEME */

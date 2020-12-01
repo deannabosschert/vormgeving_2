@@ -193,8 +193,8 @@ h5 {
 }
 
 h6 {
-  font-size: 1.45rem;
-  line-height: 1.45rem;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
 }
 
 p {
@@ -219,8 +219,8 @@ header section p {
 }
 
 figure p {
-  font-size: 1.45rem;
-  line-height: 1.45rem;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
 }
 
 main figure p {
@@ -228,7 +228,7 @@ main figure p {
 }
 
 main section .video figcaption {
-  font-size: 1.45rem;
+  font-size: 1.4rem;
 }
 
 .logo {
@@ -368,7 +368,11 @@ main section {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+}
+
+main .content {
+  margin-bottom: 3.5rem;
 }
 
 article {
@@ -376,6 +380,11 @@ article {
   border-radius: 5px;
   display: flex;
   margin: 1rem;
+  margin-bottom: 2rem;
+}
+
+main .quote {
+  margin-bottom: 2rem;
 }
 
 article h3 {
@@ -511,6 +520,7 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100vw;
+  margin-bottom: 3.5rem;
 }
 
 footer ul {

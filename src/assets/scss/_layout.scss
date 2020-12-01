@@ -136,7 +136,11 @@ main section {
   // padding: 1rem 2rem;
   // // border-radius: 6px;
   // // box-shadow: inset 6px 6px 9px #f1f1f1, inset -6px -6px 9px #ffffff;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+}
+
+main .content {
+  margin-bottom: 3.5rem;
 }
 
 article {
@@ -147,9 +151,15 @@ article {
   // box-shadow: 1.5px 1.5px 2px #f1f1f1, -1.5px -1.5px 2px #ffffff;
   display: flex;
   margin: 1rem;
+  margin-bottom: 2rem;
   // min-width: 25rem;
   // max-width: 40vw;
 }
+
+main .quote {
+  margin-bottom: 2rem;
+}
+
 
 article h3 {
   writing-mode: vertical-rl;
@@ -304,6 +314,7 @@ footer {
   flex-wrap: wrap;
   // justify-content: center;
   width: 100vw;
+  margin-bottom: 3.5rem;
 }
 
 footer ul {

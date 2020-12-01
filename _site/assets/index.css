@@ -749,15 +749,23 @@ header section p {
     /* writing-mode: vertical-rl; */
   }
 
-  article:nth-child(odd) h3 {
+  .content article:nth-child(odd) h3 {
     transform: rotate(0);
   }
 
-  article p {
+  content article p {
     align-self: center;
   }
 
-  main section article:nth-child(1n) {
+  main content article:nth-child(1n) {
+    flex-direction: column;
+  }
+
+  main .content article:nth-child(3) {
+    flex-direction: column;
+  }
+
+  main .content article:nth-child(6) {
     flex-direction: column;
   }
 }
@@ -779,12 +787,9 @@ article:nth-child(5) h3 {
 }
 
 main .others h2 {
-  margin-bottom: 2rem;
-}
-
-main .others h2 span {
   text-decoration: underline;
   padding: 0 1rem;
+  margin-bottom: 2rem;
 }
 
 main .others article {

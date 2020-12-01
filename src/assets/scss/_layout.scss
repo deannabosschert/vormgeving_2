@@ -565,15 +565,26 @@ button:disabled {
     // /* text-orientation: s
   }
 
-  article:nth-child(odd) h3 {
+  .content article:nth-child(odd) h3 {
     transform: rotate(0);
   }
 
-  article p {
+
+
+
+  content article p {
     align-self: center;
   }
 
-  main section article:nth-child(1n) {
+  main content article:nth-child(1n) {
+    flex-direction: column;
+  }
+  main .content article:nth-child(3) {
+    flex-direction: column;
+  }
+
+
+  main .content article:nth-child(6) {
     flex-direction: column;
   }
 }
@@ -595,14 +606,13 @@ article:nth-child(5) h3 {
   background-color: $darker-green;
 }
 
-main .others h2 {
-  margin-bottom: 2rem;
-}
 
-main .others h2 span {
+main .others h2 {
   text-decoration: underline;
   // border-bottom: 1px solid black;
   padding: 0 1rem;
+  margin-bottom: 2rem;
+
 }
 
 main .others article {
@@ -620,23 +630,18 @@ main .others .blogposts .blogpost-container {
   grid-template-areas: "blogpost_1 blogpost_2" "blogpost_3 blogpost_4";
   padding: 0 1rem;
 }
-
 main .others .blogposts div figure:nth-child(1) {
   grid-area: blogpost_1;
 }
-
 main .others .blogposts div figure:nth-child(2) {
   grid-area: blogpost_2;
 }
-
 main .others .blogposts div figure:nth-child(3) {
   grid-area: blogpost_3;
 }
-
 main .others .blogposts div figure:nth-child(4) {
   grid-area: blogpost_4;
 }
-
 main .others .vlogs .vlog-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -645,19 +650,15 @@ main .others .vlogs .vlog-container {
   grid-template-areas: "vlog_1 vlog_2" "vlog_3 vlog_4";
   padding: 0 1rem;
 }
-
 main .others .vlogs div figure:nth-child(1) {
   grid-area: vlog_1;
 }
-
 main .others .vlogs div figure:nth-child(2) {
   grid-area: vlog_2;
 }
-
 main .others .vlogs div figure:nth-child(3) {
   grid-area: vlog_3;
 }
-
 main .others .vlogs div figure:nth-child(4) {
   grid-area: vlog_4;
 }

@@ -622,6 +622,14 @@ button:disabled {
     margin-bottom: 3rem;
   }
 
+  main section .video {
+    max-width: 45%;
+  }
+
+  main section .video img {
+    max-width: 100%;
+  }
+
   .arrow-right {
     width: 3rem;
     height: 3rem;
@@ -629,11 +637,46 @@ button:disabled {
 
   main section {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   main section article {
     max-width: 45%;
+  }
+
+  main .quote {
+    max-width: 45%;
+    align-self: center;
+  }
+
+  main section article:nth-child(1) {
+    order: 1;
+  }
+
+  main section .video {
+    order: 2;
+  }
+
+  main section article:nth-child(3) {
+    order: 4;
+  }
+
+  main section .quote {
+    order: 3;
+  }
+
+  main section article:nth-child(5) {
+    order: 5;
+  }
+
+  main section article:nth-child(6) {
+    flex-direction: column;
+    order: 6;
+  }
+
+  main section article:nth-child(6) h3 {
+    writing-mode: initial;
   }
 }
 @media screen and (max-width: 997px) {

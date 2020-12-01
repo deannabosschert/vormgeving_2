@@ -301,7 +301,7 @@ header section p {
   text-align: left;
   width: 70%;
   color: white;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   margin-left: 10%;
 }
 
@@ -401,7 +401,7 @@ article:nth-child(even) {
   position: absolute;
   z-index: 20;
   top: 0;
-  right: 30px;
+  right: 7%;
   min-height: 20px;
   padding: 0 1.3rem;
 }
@@ -635,6 +635,12 @@ button:disabled {
 }
 
 /* THEME */
+@media screen and (min-width: 997px) {
+  .arrow-right {
+    width: 3rem;
+    height: 3rem;
+  }
+}
 @media screen and (max-width: 997px) {
   header .quote {
     margin: 2rem;
@@ -643,6 +649,11 @@ button:disabled {
 
   header button {
     z-index: 10;
+  }
+
+  .arrow-right {
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }
 @media screen and (max-width: 543px) {

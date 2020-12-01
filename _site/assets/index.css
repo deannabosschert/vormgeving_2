@@ -368,7 +368,7 @@ main section {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 article {
@@ -384,24 +384,24 @@ article h3 {
   text-align: center;
   background-color: rgba(255, 0, 0, 0.95);
   color: white;
-  padding: 0 0.5rem;
+  padding: 1rem;
   font-variant: small-caps;
   letter-spacing: 1.3px;
 }
 
-article:nth-child(1) h3 {
+.content article:nth-child(1) h3 {
   transform: rotate(-180deg);
 }
 
-article:nth-child(5) h3 {
+.content article:nth-child(5) h3 {
   transform: rotate(-180deg);
 }
 
-main section article:nth-child(3) {
+main .content article:nth-child(3) {
   flex-direction: row-reverse;
 }
 
-main section article:nth-child(6) {
+main .content article:nth-child(6) {
   flex-direction: row-reverse;
 }
 
@@ -622,11 +622,11 @@ button:disabled {
     margin-bottom: 3rem;
   }
 
-  main section .video {
+  main .content .video {
     max-width: 45%;
   }
 
-  main section .video img {
+  main .content .video img {
     max-width: 100%;
   }
 
@@ -650,32 +650,32 @@ button:disabled {
     align-self: center;
   }
 
-  main section article:nth-child(1) {
+  main .content article:nth-child(1) {
     order: 1;
   }
 
-  main section .video {
+  main .content .video {
     order: 2;
   }
 
-  main section article:nth-child(3) {
+  main .content article:nth-child(3) {
     order: 4;
   }
 
-  main section .quote {
+  main .content .quote {
     order: 3;
   }
 
-  main section article:nth-child(5) {
+  main .content article:nth-child(5) {
     order: 5;
   }
 
-  main section article:nth-child(6) {
+  main .content article:nth-child(6) {
     flex-direction: column;
     order: 6;
   }
 
-  main section article:nth-child(6) h3 {
+  main .content article:nth-child(6) h3 {
     writing-mode: initial;
   }
 }
@@ -752,12 +752,131 @@ header section p {
   }
 }
 @media (min-width: 997px) and (max-width: 1190px) {
-  main section .quote {
+  main .content .quote {
     order: 5;
   }
 
-  main section article:nth-child(5) {
+  main .content article:nth-child(5) {
     order: 3;
+  }
+}
+article:nth-child(3) h3 {
+  background-color: rgba(7, 52, 35, 0.9);
+}
+
+article:nth-child(5) h3 {
+  background-color: rgba(7, 52, 35, 0.9);
+}
+
+main .others article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+main .others .blogposts .blogpost-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  grid-template-areas: "blogpost_1 blogpost_2" "blogpost_3 blogpost_4";
+  padding: 0 1rem;
+}
+
+main .others .blogposts div figure:nth-child(1) {
+  grid-area: blogpost_1;
+}
+
+main .others .blogposts div figure:nth-child(2) {
+  grid-area: blogpost_2;
+}
+
+main .others .blogposts div figure:nth-child(3) {
+  grid-area: blogpost_3;
+}
+
+main .others .blogposts div figure:nth-child(4) {
+  grid-area: blogpost_4;
+}
+
+main .others .vlogs .vlog-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  grid-template-areas: "vlog_1 vlog_2" "vlog_3 vlog_4";
+  padding: 0 1rem;
+}
+
+main .others .vlogs div figure:nth-child(1) {
+  grid-area: vlog_1;
+}
+
+main .others .vlogs div figure:nth-child(2) {
+  grid-area: vlog_2;
+}
+
+main .others .vlogs div figure:nth-child(3) {
+  grid-area: vlog_3;
+}
+
+main .others .vlogs div figure:nth-child(4) {
+  grid-area: vlog_4;
+}
+
+main .others figure {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main .others article h3 {
+  writing-mode: initial;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+main .others article div {
+  max-width: 100%;
+}
+
+main .others article div img {
+  max-width: 100%;
+  height: 17rem;
+  object-fit: cover;
+}
+
+main .others article figcaption {
+  font-size: 1rem;
+  color: lightgrey;
+  margin-top: -2.2rem;
+}
+
+main .others article h6 {
+  align-self: center;
+  font-weight: bold;
+}
+
+main .others article a {
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid #fd000d;
+  padding: 0.2rem;
+}
+
+@media screen and (max-width: 700px) {
+  main .others .vlogs .vlog-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 997px) {
+  main .others article {
+    min-width: 45%;
   }
 }
 

@@ -224,15 +224,16 @@ article p {
     margin-top: 6rem;
   }
 
-  header section p, header section h1 {
+  header section h1,
+  header section p {
     text-align: center;
     align-self: center;
-    margin-left: 0%;
+    margin-left: 0;
   }
 
   header section button {
     align-self: center;
-    margin-left: 0%;
+    margin-left: 0;
   }
 
   header .quote {
@@ -244,10 +245,26 @@ article p {
   }
 
   section article h3 {
-    writing-mode: horizontal-lr;
-    text-orientation: initial; 
+    writing-mode: initial;
+    text-orientation: initial;
     /* writing-mode: vertical-rl; */
-// /* text-orientation: s
+    // /* text-orientation: s
+  }
+
+  article:nth-child(odd) h3 {
+    transform: rotate(0);
+  }
+
+  article p {
+    align-self: center;
+  }
+
+  article:nth-child(even) {
+    flex-direction: column;
+  }
+
+  button {
+    background-image: linear-gradient(to bottom, rgba(7, 52, 35, 1) -10%, rgba(7, 52, 35, 1) 60%, rgba(24, 175, 117, 0.675) 99%, #18af75 155%)
   }
 }
 //
@@ -298,18 +315,24 @@ main section .video figcaption {
 
 footer {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  // justify-content: center;
   width: 100vw;
 }
 
-footer p {
+footer ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   max-height: 2rem;
-  width: 25%;
+  width: 100%;
   margin-top: 1rem;
-  margin-bottom: 0.5rem;
+  // margin-bottom: 2.5rem;
 }
+
+footer ul li {
+display: flex;
+justify-content: center;}
 
 footer img {
   max-width: 100%;

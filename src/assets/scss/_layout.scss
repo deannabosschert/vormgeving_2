@@ -493,6 +493,8 @@ button:disabled {
     writing-mode: initial;
   }
 }
+
+
 @media screen and (max-width: 997px) {
   header .quote {
     margin: 2rem;
@@ -564,5 +566,15 @@ button:disabled {
 
   main section article:nth-child(1n) {
     flex-direction: column;
+  }
+}
+
+@media (min-width: 997px) and (max-width: 1190px) {
+  main section .quote {
+    order: 5;
+  }
+
+  main section article:nth-child(5) {
+    order: 3;
   }
 }

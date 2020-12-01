@@ -751,5 +751,14 @@ header section p {
     flex-direction: column;
   }
 }
+@media (min-width: 997px) and (max-width: 1190px) {
+  main section .quote {
+    order: 5;
+  }
+
+  main section article:nth-child(5) {
+    order: 3;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */

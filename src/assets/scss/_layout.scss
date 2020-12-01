@@ -584,6 +584,16 @@ article:nth-child(5) h3 {
   background-color: $darker-green;
 }
 
+main .others h2 {
+  margin-bottom: 2rem;
+}
+
+main .others h2 span {
+  text-decoration: underline;
+  // border-bottom: 1px solid black;
+  padding: 0 1rem;
+}
+
 main .others article {
   display: flex;
   flex-direction: row;
@@ -658,6 +668,7 @@ main .others article h3 {
 
 main .others article div {
   max-width: 100%;
+  position: relative;
 }
 
 main .others article div img {
@@ -668,9 +679,15 @@ main .others article div img {
 
 main .others article figcaption {
   // margin-left: -10%;
-  font-size: 1rem;
+  // font-size: 1rem;
   color: lightgrey;
-  margin-top: -2.2rem;
+  // margin-top: -2.2rem;
+  position: absolute;
+  bottom: 1%;
+  max-width: 100%;
+  font-size: 80%;
+  margin-left: 2.5%;
+  // line-height: 1.2;
 }
 
 main .others article h6 {

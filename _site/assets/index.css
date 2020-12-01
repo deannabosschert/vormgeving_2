@@ -896,6 +896,12 @@ main .others article a {
     flex-direction: column;
     width: 90%;
   }
+
+  main .others .blogposts .blogpost-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
 }
 @media screen and (min-width: 997px) {
   main .others article {

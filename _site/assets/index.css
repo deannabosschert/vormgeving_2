@@ -453,49 +453,6 @@ article p {
   max-width: 80%;
 }
 
-@media screen and (max-width: 475px) {
-  header .quote {
-    margin-top: 6rem;
-  }
-
-  header section h1,
-header section p {
-    text-align: center;
-    align-self: center;
-    margin-left: 0;
-  }
-
-  header section button {
-    align-self: center;
-    margin-left: 0;
-  }
-
-  header .quote {
-    margin-left: 5%;
-  }
-
-  section article {
-    flex-direction: column;
-  }
-
-  section article h3 {
-    writing-mode: initial;
-    text-orientation: initial;
-    /* writing-mode: vertical-rl; */
-  }
-
-  article:nth-child(odd) h3 {
-    transform: rotate(0);
-  }
-
-  article p {
-    align-self: center;
-  }
-
-  article:nth-child(even) {
-    flex-direction: column;
-  }
-}
 main section .video {
   display: flex;
   flex-direction: column;
@@ -643,6 +600,15 @@ button:disabled {
     width: 3rem;
     height: 3rem;
   }
+
+  main section {
+    display: flex;
+    justify-content: center;
+  }
+
+  main section article {
+    max-width: 45%;
+  }
 }
 @media screen and (max-width: 997px) {
   header .quote {
@@ -658,6 +624,15 @@ button:disabled {
     width: 2.5rem;
     height: 2.5rem;
   }
+
+  main section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .video {
+    margin: 2rem 0;
+  }
 }
 @media screen and (max-width: 543px) {
   header button {
@@ -666,7 +641,45 @@ button:disabled {
 }
 @media screen and (max-width: 475px) {
   header .quote {
-    margin-top: 5rem;
+    margin-top: 6rem;
+  }
+
+  header section h1,
+header section p {
+    text-align: center;
+    align-self: center;
+    margin-left: 0;
+  }
+
+  header section button {
+    align-self: center;
+    margin-left: 0;
+  }
+
+  header .quote {
+    margin-left: 5%;
+  }
+
+  section article {
+    flex-direction: column;
+  }
+
+  section article h3 {
+    writing-mode: initial;
+    text-orientation: initial;
+    /* writing-mode: vertical-rl; */
+  }
+
+  article:nth-child(odd) h3 {
+    transform: rotate(0);
+  }
+
+  article p {
+    align-self: center;
+  }
+
+  main section article:nth-child(1n) {
+    flex-direction: column;
   }
 }
 

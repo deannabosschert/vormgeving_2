@@ -23,5 +23,11 @@ Design the lyrics of a song for Spotify, based on visual research.
 > The pink post-it notes are my own, the teacher and my classmates use other colors.
 
 ![summary of my song lyric analysis](https://github.com/deannabosschert/vormgeving_2/blob/master/src/assets/img/assignment_milestones/songtekst.jpg)
+
+### Visual research
+All of the images stated as such are my own and are not to be used/replicated without permission
 ![summary of my visual research](https://github.com/deannabosschert/vormgeving_2/blob/master/src/assets/img/assignment_milestones/visual_research.jpg)
+
+### Title sketches
+These are all .gif images as seen below.
 ![summary of my title sketches](https://github.com/deannabosschert/vormgeving_2/blob/master/src/assets/img/assignment_milestones/schetsen.jpg)

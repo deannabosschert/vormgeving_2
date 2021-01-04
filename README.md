@@ -4,6 +4,8 @@
 
 
 # Vormgeving 2
+
+The complete log of the assignements and subassignments can be found on my [GitBook](https://deannabosschert.gitbook.io/vormgeving-2/).
 ## Assignment 1
 Design a multi-device layout for the 'Plog de dag'-event in the style of I Amsterdam.
 

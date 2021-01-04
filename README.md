@@ -11,6 +11,17 @@ Design a multi-device layout for the 'Plog de dag'-event in the style of I Amste
 
 > Deze code gebruik ik als voorbeeld voor eerste- en tweedejaars om te laten zien hoe je je css-file **niet** moet indelen. Geenszins voor herhaling vatbaar :)
 
+### Iteration 1 (summary)
+![summary of the version 1 of the assignment](https://github.com/deannabosschert/vormgeving_2/blob/master/src/assets/img/assignment_milestones/assignment_1.jpg)
+
+### Final designs
+![summary of the final designs per viewport or device](https://github.com/deannabosschert/vormgeving_2/blob/master/src/assets/img/assignment_milestones/assignment_1_devices.jpg)
 
 ## Assignment 2
 Design the lyrics of a song for Spotify, based on visual research.
+
+> The pink post-it notes are my own, the teacher and my classmates use other colors.
+
+![summary of my song lyric analysis](https://github.com/deannabosschert/vormgeving_2/blob/master/src/assets/img/assignment_milestones/songtekst.jpg)
+![summary of my visual research](https://github.com/deannabosschert/vormgeving_2/blob/master/src/assets/img/assignment_milestones/visual_research.jpg)
+![summary of my title sketches](https://github.com/deannabosschert/vormgeving_2/blob/master/src/assets/img/assignment_milestones/schetsen.jpg)

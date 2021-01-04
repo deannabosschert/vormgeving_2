@@ -32,3 +32,16 @@ Left column is inspiration found on the internet and not my own, as well as the 
 ### Title sketches
 These are all .gif images as seen below.
 ![summary of my title sketches](https://github.com/deannabosschert/vormgeving_2/blob/master/src/assets/img/assignment_milestones/schetsen.jpg)
+
+
+
+
+## Installation
+` npm install` ==> install my added packages
+
+### Compiles and hot-reloads for development
+` npm run dev ` ==> during development, complile and reload app && scss
+
+### Compiles and minifies for production
+`npm run build` ==> put build in /dist, optimalized for production
+

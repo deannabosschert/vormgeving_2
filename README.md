@@ -25,7 +25,8 @@ Design the lyrics of a song for Spotify, based on visual research.
 ![summary of my song lyric analysis](https://github.com/deannabosschert/vormgeving_2/blob/master/src/assets/img/assignment_milestones/songtekst.jpg)
 
 ### Visual research
-All of the images stated as such are my own and are not to be used/replicated without permission
+All of the images stated as such are my own and are not to be used/replicated without permission.
+Left column is inspiration found on the internet and not my own, as well as the three images at the bottom right.
 ![summary of my visual research](https://github.com/deannabosschert/vormgeving_2/blob/master/src/assets/img/assignment_milestones/visual_research.jpg)
 
 ### Title sketches
